@@ -1,0 +1,93 @@
+header{
+    background-color: aqua;
+    height: 250px;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
+/* DIRECT CHILD SELECTOR */
+header > h1{
+    color: blue;
+}
+
+
+.card > h1{
+    color:bisque;
+}
+
+header > #para{
+    background-color:blue;
+}
+
+.card1{
+    height: 400px;
+    width: 600px;
+    background-color:cadetblue;
+}
+
+.card1 > .box{
+    height:300px;
+    width: 500px;
+    background-color: chartreuse;
+}
+
+.card1 > .box > .container{
+    height: 200px;
+    width: 400px;
+    background-color: crimson;
+}
+
+.card1 h2{
+    color: blanchedalmond;
+} 
+
+
+main > button{
+    background-color: aqua;
+}
+
+/* HOVER */
+
+main > button:hover{
+    background-color: crimson;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* ACTIVE */
+
+main>button:active{
+background-color: blue;
+color: aliceblue;
+font font-weight: bold;
+}
+
+/* Nth CHILD */
+
+main > ol > li:nth-child(2n+1){
+    background-color: chocolate;
+}
+
+main > ol > li:nth-child(2n){
+    background-color: aquamarine;
+}
+
+section > p:nth-child(3){
+    background-color: blueviolet;
+}
+
+section > h2:nth-child(2){
+    background-color: darkblue;
+}
+
+section > h1:nth-child(4){
+    background-color: darkgoldenrod;
+}
+
+section > button:nth-child(7){
+    background-color: aqua;
+}
