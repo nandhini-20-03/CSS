@@ -1,0 +1,33 @@
+/* 1.Tagname selector */
+
+header{
+    background-color:antiquewhite;
+    height: 250px;
+}
+
+/* 2.ID Selector */
+
+#topic{
+    color: blueviolet;
+}
+
+/* 3.class selector */
+
+.para{
+    background-color: cadetblue;
+    font-size: 27px;
+    font-style: italic;
+}
+
+/* 4.Universal selector */
+
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* 5.Group Selector */
+
+h2 , #topic{
+    text-align: center;
+}
