@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+div>ul{
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    font-weight: bold; 
+}
+
+div>ul>li>a{
+    text-decoration: none;
+}
+
+.container>button{
+    padding: 10px;
+    margin: 5px;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+
+.container>button:hover{
+    background-color: pink;
+    color:blue;
+}
+
+div>ul>li>a:hover{
+    color:red;
+}
