@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.outer{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.outer>.upper{
+    height: 50vh;
+    /* width: 100vw; */
+    background-color: blue;
+}
+
+.outer>.lower{
+    height: 50vh;
+    /* width: 100vw; */
+    background-color: skyblue;
+}
+
+.outer>.inner{
+    height: 70vh;
+    width: 80vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+
+}
+
+.inner>.left{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.left>article{
+    /* background-color: red; */
+    width: 60%;
+}
+
+article>h1{
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+article>form>label{
+    font-size: 18px;
+    /* display: block; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+
+article>form>input{
+    /* display: block; */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+article>form>button{
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-radius: 10px;
+    background-color: violet;
+    color: white;
+    border: none;
+    text-shadow: 1px 2px 2px black;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in;
+}
+
+.left>p{
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.left>p>a{
+    text-decoration: none;
+    color: rgb(51,51,225);
+}
+
+.right{
+    flex-basis: 50%;
+}
+
+.right > img{
+    height: 60%;
+    width: 80%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 8px;
+}
+.right > h1{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.right > p{
+    font-size: 18px;
+            
+}
+
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+}
+footer > .line{
+    height: 5px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 225);
+}

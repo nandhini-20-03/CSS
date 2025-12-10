@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outer{
+    height: 100vh;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+}
+
+.outer>.inner{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+}
+
+.inner>nav{
+    height: 90px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    gap:25px;
+}
+
+nav > ul > li{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+    position: relative;   
+}
+
+ul > li::after{
+    content: "";
+    height: 3px;
+    background-color: rgb(110, 20, 20);
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s ease-in;
+}
+
+ul>li:hover::after{
+    width: 100%;
+}
+
+nav>button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(110, 20, 20);
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+nav > button:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.main{
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+.main>.left{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.left>h1{
+    font-size: 48px;
+    animation: up_down 4s ease-in infinite;
+}
+
+.main>.left>button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(110, 20, 20);
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+
+.main>.left>button:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.main>.right{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.main>.right>.circle{
+    height:350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: rgb(130, 10, 10);
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.right>.img{
+    height: 70%;
+    position: absolute;
+    bottom: 10px;
+    transition: transform 0.3s ease-in;
+}
+
+.right>img:hover{
+    transform: scale(1.03);
+}
+
+span{
+    font-style: italic;
+    color: rgb(174, 174, 9);
+}

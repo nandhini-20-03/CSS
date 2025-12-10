@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.outer{
+    background-image: linear-gradient(to right,darkblue,blue,rgb(105, 154, 222));
+    height: 100vh;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    position: relative;
+}
+
+.outer>.inner{
+    height: 500px;
+    width: 500px;
+    background-image: linear-gradient(to left,yellow,orange,red);
+    border-radius: 20px; position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.inner>img{
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+}
+

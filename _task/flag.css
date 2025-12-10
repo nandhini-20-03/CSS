@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.outer{
+    height: 100vh;
+}
+
+.top{
+    background-color: orange;
+    height: 33vh;
+}
+
+.middle{
+    background-color:white;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom{
+    background-color:green;
+    height: 33vh;
+}
+
+.middle>img{
+    height:80%;
+    transition: all 2s ease-in;
+}
+
+.middle>img:hover{
+    transform:rotate(360deg);
+}
+
