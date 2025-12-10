@@ -1,0 +1,21 @@
+header{
+    background-color: chartreuse;
+}
+
+#topic{
+    text-align: center;
+    color: blueviolet;
+    text-transform: capitalize;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 2px 3px 2px grey;
+    /* x axis y axis blursize color */
+}
+
+#para{
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 10px;
+    text-indent: 50px;
+}
