@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.XV7CefygWm6V-Gl3RBzNWgHaEo?pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.outer>.inner{
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px black;
+
+    background-color: white;
+    background-image: url("https://tse3.mm.bing.net/th/id/OIP.o_Qi916FlohRm_fHXACMFQHaEK?pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;   
+}
